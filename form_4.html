@@ -8,30 +8,42 @@
 </head>
 
 <body>
-    <h34>Personal details Form </h34>
-    < action="">
+    <h1>Personal Details Form </h1><br>
+    <form action="">
         <fieldset>
-            <legend>personal information</legend>
-            <input type="text" name="" placeholder="enter your name"><br>
-
-            <textarea name="" id="" placeholder=" enter your addres"></textarea><br>
-            <select name="distric" id="">
+            <legend style="position: center;background-color:yellow; color: green; font-size: 25pt;font-weight: bolder; ">Personal information</legend> <br>
+            Trainee ID: <br>
+            <input type="number" name="ID" placeholder="enter your ID"> <br>
+             Full Name: <br>
+            <input type="text" name="Full Name" placeholder="enter your name"><br> 
+            Address: <br>
+            <textarea name="Address" placeholder=" enter your addres"></textarea><br>
+            District: <br>
+            <select name="distric" >
                 <option value=""> select one</option>
-                <option lavel="dhaka"></option>
-                <potion value="" dhaka></potion>
-                <potion>narayanganj</potion>
-                <optgroup lavel="barisal">
-                    <potion>barisal</potion>
-                    <potion>patuakhali</potion>
+                <optgroup label="Dhaka">
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Gazipur">Gazipur</option>
+                    <option value="Tongi">Tongi</option>
+                    <option value="Saver">Saver</option>
+                    <option value="narayanganj">narayanganj</option>
+                </optgroup>
+                <optgroup label="barisal">
+                    <option value="barisal">barisal</option>
+                    <option value="patuakhali">patuakhali</option>
                 </optgroup>
             </select>
         </fieldset>
-        <legend>login information</legend>
+        <br>
+        <fieldset> 
+        <legend>login Information</legend><br>
+        Email: <br>
         <input type="text" name="" placeholder="enter your email "><br>
-
+        Password: <br>
         <input type="password" name="password" placeholder="enter your password "><br>
-        <input type="password" name="repeatpassword" placeholder=" enter password again"> <br>
-        </fieldset>
+        Repeat password : <br>
+        <input type="password" name="repeat password" placeholder=" enter password again"> <br>
+        </fieldset> 
 
         </form>
 </body>
