@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .glass-container{
+        height: 180px;
+        position: relative;
+        width: 200px;
+        border-radius: 50px;
+        padding: 100px;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.4);
+        box-shadow: 0 25px 45px rgba(0,0,0,0.4);
+        z-index: 10;
+        overflow: hidden;
+
+    }
+    body{
+        background-image: url(https://www.cssportal.com/css-image-filter-generator/nature.jpg);
+     display: flex;
+    }
+    .container{
+        justify-content:center;
+        align-items: center;
+        top: 10px;
+       left :200px
+    }
+</style>
+</head>
+<body>
+    <div class="glass-container">
+        <br>
+         <div class="Input-group">
+             <label>password</label>
+             <input type="password" required>
+              <br>
+
+         </div>
+         <div class="remember-forget">
+             <div>
+               <input type="checkbox">Remember as</div><label> <br>
+               <a href="#">forget password</a>
+          </div>
+          <div>
+            <button type="submit">Login</button>
+          </div>
+    </div>
+   
+</body>
+</html>
