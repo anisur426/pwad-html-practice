@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+     body{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items: center;
+        height: 50vh;
+      }
+     label{
+       display: block;
+       margin-top:10px ;
+       font-size: bold;
+     }
+   .container{
+    flex: 1;
+     padding: 8px;
+     border-radius:10px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   }
+
+   input,select,textarea{ width: 20%;
+    padding: 8px;
+    margin: 2px;
+    border: 1px solid blueviolet ;
+    border-radius: 5px;
+  
+   }
+   h1{
+    text-align: center ;
+   }
+   .Geder input{
+       width:10%;
+   }
+   .hobbies input{
+    width: auto;
+   }
+   .create-btn{
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+   }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Account</h1>
+ <form>
+           <label for="Frist name">Frist name:</label>
+            <input type="text" name="First Name" placeholder="Enter your First  name">
+          <label>Last name:</label> 
+         <input type="text" name="Last Name" placeholder="Enter Your Last Name"> 
+         <label>Email:</label>
+         <input type="text" name="Email" placeholder="Enter your Mail">
+         <label>Password:</label>
+         <input type="password" name="password" placeholder="Enter your password">
+         <label>Conform Password: </label>
+         <input type="password" name="password" placeholder="Enter your password again"> 
+         <label>Gender:</label><br>
+         <input type="radio" name="Gender">male
+         <input type="radio" name="Gender">female
+         <label>Hobbies</label>
+         <div class="hobbies">
+            <input type="checkbox"> Music
+            <input type="checkbox"> Sports
+             <input type="checkbox">Travel
+              <input type="checkbox">Movies
+            
+         </div>
+
+    </form>
+    </div>
+
+   
+   
+</body>
+</html>

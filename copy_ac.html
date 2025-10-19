@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- ওয়েবপেজে বাংলা বা ইংরেজি সঠিকভাবে দেখানোর জন্য -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- মোবাইলেও ঠিকভাবে দেখাবে -->
+    <title>Create Account Form</title>
+    <style>
+        /* ফর্মের জন্য সাধারণ ডিজাইন */
+        body {
+            
+            flex-wrap: wrap;
+            gap: 10px;
+            font-family: Arial, sans-serif;
+            background-color: #dce3e8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex: 1;
+        }
+
+        .inline {
+            display: inline-block;
+            width: 48%;
+        }
+
+        .hobbies input {
+            width: auto;
+        }
+
+        .create-btn {
+            background-color: #30c28a;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .create-btn:hover {
+            background-color: #28a67b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Create Account</h2> <!-- শিরোনাম -->
+
+        <!-- ফর্ম শুরু -->
+        <form>
+
+            <!-- প্রথম নাম -->
+            <label>First Name *</label> <!-- নামের লেবেল -->
+            <input type="text" placeholder="Enter your first name"> <!-- টেক্সট ইনপুট -->
+
+            <!-- শেষ নাম -->
+            <label>Last Name *</label>
+            <input type="text" placeholder="Enter your last name">
+
+            <!-- ইমেইল -->
+            <label>Email *</label>
+            <input type="email" placeholder="Enter your email">
+
+            <!-- পাসওয়ার্ড -->
+            <label>Password *</label>
+            <input type="password" placeholder="Enter your password">
+
+            <!-- পাসওয়ার্ড কনফার্ম -->
+            <label>Confirm Password *</label>
+            <input type="password" placeholder="Confirm your password">
+
+            <!-- জেন্ডার নির্বাচন -->
+            <label>Gender:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <!-- radio = একটিমাত্র অপশন সিলেক্ট করা যায় -->
+
+            <!-- শখ / Hobbies -->
+            <label>Hobbies:</label>
+            <div class="hobbies">
+                <input type="checkbox"> Music
+                <input type="checkbox"> Sports
+                <input type="checkbox"> Travel
+                <input type="checkbox"> Movies
+            </div>
+            <!-- checkbox = একাধিক অপশন সিলেক্ট করা যায় -->
+
+            <!-- আয়ের উৎস -->
+            <label>Source of Income:</label>
+            <select>
+                <option>Employed</option>
+                <option>Student</option>
+                <option>Freelancer</option>
+                <option>Business</option>
+            </select>
+            <!-- select = dropdown মেনু -->
+
+            <!-- আয় -->
+            <label>Income:</label>
+            <input type="range" min="0" max="50000" value="20000">
+            <!-- range = স্লাইডার -->
+
+            <!-- ছবি আপলোড -->
+            <label>Upload Profile Picture:</label>
+            <input type="file">
+            <!-- file = ফাইল বাছাই করার ইনপুট -->
+
+            <!-- বয়স -->
+            <label>Age:</label>
+            <input type="number" value="18">
+            <!-- number = শুধু সংখ্যা দেওয়া যায় -->
+
+            <!-- নিজের সম্পর্কে -->
+            <label>Bio:</label>
+            <textarea rows="3" placeholder="Write something about yourself..."></textarea>
+            <!-- textarea = বড় টেক্সট লেখার জায়গা -->
+
+            <!-- সাবমিট বাটন -->
+            <button class="create-btn">Create</button>
+            <!-- button = ফর্ম সাবমিট বা অ্যাকশন করার বোতাম -->
+
+        </form>
+        <!-- ফর্ম শেষ -->
+    </div>
+
+</body>
+</html>

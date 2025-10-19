@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c7d6dd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            width: 400px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* 🔹 First & Last Name same line এ রাখার জন্য */
+        .name-fields {
+            display: flex;
+            gap: 10px;
+        }
+
+        .name-fields div {
+            flex: 1;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin-top: 5px;
+        }
+
+        .create-btn {
+            width: 100%;
+            background-color: #30c28a;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .create-btn:hover {
+            background-color: #27a274;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Create Account</h2>
+
+        <form>
+            <!-- 🔹 First & Last Name -->
+            <div class="name-fields">
+                <div>
+                    <label>First Name *</label>
+                    <input type="text" placeholder="Enter your first name">
+                </div>
+                <div>
+                    <label>Last Name *</label>
+                    <input type="text" placeholder="Enter your last name">
+                </div>
+            </div>
+
+            <!-- Email -->
+            <label>Email *</label>
+            <input type="email" placeholder="Enter your email">
+
+            <!-- Password -->
+            <label>Password *</label>
+            <input type="password" placeholder="Enter your password">
+
+            <!-- Confirm Password -->
+            <label>Confirm Password *</label>
+            <input type="password" placeholder="Confirm your password">
+
+            <!-- Gender -->
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </div>
+
+            <!-- Hobbies -->
+            <label>Hobbies:</label>
+            <div class="checkbox-group">
+                <input type="checkbox"> Music
+                <input type="checkbox"> Sports
+                <input type="checkbox"> Travel
+                <input type="checkbox"> Movies
+            </div>
+
+            <!-- Source of Income -->
+            <label>Source of Income:</label>
+            <select>
+                <option>Employed</option>
+                <option>Student</option>
+                <option>Freelancer</option>
+                <option>Business</option>
+            </select>
+
+            <!-- Income -->
+            <label>Income:</label>
+            <input type="range" min="0" max="50000" value="20000">
+
+            <!-- Profile Picture -->
+            <label>Upload Profile Picture:</label>
+            <input type="file">
+
+            <!-- Age -->
+            <label>Age:</label>
+            <input type="number" value="18">
+
+            <!-- Bio -->
+            <label>Bio:</label>
+            <textarea rows="3" placeholder="Write something about yourself..."></textarea>
+
+            <!-- Submit Button -->
+            <button class="create-btn">Create</button>
+        </form>
+    </div>
+
+</body>
+</html>
